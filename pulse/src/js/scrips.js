@@ -6,12 +6,26 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><img src="img/slide/chevron_right_solid.png"></button>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    variableWidth: true,
+                    infinite: true,
                     dots: false,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 },
             },
         ],

@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    .container {
+        max-width: 750px;
+    }
     .title_left {
         font-size: 30px;
         text-align: left;
@@ -72,17 +75,15 @@
         }
     }
 
-    .slick-slide img {
-        width: 70%;
-        margin: 0 auto;
-    }
-
     #consultation-form {
         margin-left: 20px;
     }
 }
 
 @media (max-width: 991px) {
+    .container {
+        max-width: none;
+    }
     .title {
         font-size: 25px;
     }
@@ -181,11 +182,6 @@
             margin: 0 auto;
         }
     }
-    .slick-slide img {
-        margin: 0 auto;
-        width: 281px;
-        height: 188px;
-    }
 
     .catalog {
         &__content {
@@ -259,8 +255,239 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .container {
+        max-width: none;
+    }
+    .title_left {
+        font-size: 24px;
+    }
+
+    .title_cat {
+        margin-top: 20px;
+    }
+
+    .button_main {
+        width: 238px;
+        height: 40px;
+        font-size: 12px;
+        margin-top: 56px;
+    }
+
+    .header {
+        justify-content: space-around;
+        &__official {
+            display: none;
+        }
+    }
+
+    .promo {
+        &__wrapper {
+            margin-top: 37px;
+        }
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+        &__icons {
+            width: 338px;
+            img {
+                width: 29px;
+            }
+        }
+        &__link {
+            font-size: 12px;
+            margin: 10px 0 0 91px;
+        }
+    }
+
+    .catalog {
+        &__tab {
+            width: 139px;
+            font-size: 14px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+        .catalog-item {
+            margin: 10px;
+        }
+    }
+
+    .footer__info {
+        width: 50%;
+        left: 50%;
+    }
+    .carousel {
+        display: none;
+    }
+
+    .modal {
+        width: 321px;
+        min-height: 336px;
+        &__subtitle {
+            font-size: 13px;
+            text-align: center;
+        }
+        &__descr {
+            font-size: 11px;
+            text-align: center;
+        }
+        &__close {
+            right: -25px;
+            font-size: 34px;
+        }
+    }
+
+    .feed {
+        &__img {
+            width: 144px;
+            height: 144px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+
+    .button_submit {
+        height: 39px;
+        font-size: 11px;
+    }
+
+    .feed-form {
+        input {
+            height: 36px;
+            font-size: 10px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
+    .container {
+        max-width: none;
+    }
+    .carousel {
+        display: none;
+    }
+
+    .button_main {
+        width: 223px;
+        height: 37px;
+        font-size: 11px;
+        margin-top: 44px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+    .title_left {
+        margin-bottom: 15px;
+    }
+
+    .promo {
+        min-height: 434px;
+        &__header {
+            font-size: 24px;
+        }
+        &__subheader {
+            font-size: 14px;
+        }
+        &__icon {
+            font-size: 9px;
+        }
+        &__icons {
+            width: 260px;
+            img {
+                width: 20px;
+            }
+        }
+        &__link {
+            display: none;
+        }
+    }
+
+    .header {
+        &__logo {
+            width: 230px;
+        }
+        &__contacts {
+            display: none;
+        }
+    }
+
+    .advantages {
+        padding: 31px 0 47px 0;
+    }
+
+    .consultation {
+        min-height: 453px;
+        padding: 38px 0 23px 0;
+        &__descr {
+            display: none;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            margin-top: 35px;
+        }
+        &__tab {
+            width: 90px;
+            font-size: 10px;
+            height: 47px;
+        }
+        .catalog-item {
+            padding: 10px 10px 10px 10px;
+            &__item {
+                height: 163px;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            display: none;
+        }
+    }
+
+    .modal {
+        padding: 20px 20px 20px 20px;
+        width: 288px;
+        min-height: 315px;
+        &__subtitle {
+            font-size: 12px;
+            text-align: center;
+        }
+        &__descr {
+            font-size: 11px;
+            text-align: center;
+        }
+        &__close {
+            right: -24px;
+            font-size: 30px;
+        }
+    }
+
+    .feed {
+        &__img {
+            width: 144px;
+            height: 144px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+
+    .button_submit {
+        height: 39px;
+        font-size: 11px;
+    }
+
+    .feed-form {
+        input {
+            height: 32px;
+            font-size: 10px;
+        }
+    }
 }
