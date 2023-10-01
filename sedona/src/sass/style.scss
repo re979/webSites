@@ -1,0 +1,74 @@
+:root {
+    --basic-blue: #81b3d2;
+    --basic-black: #000;
+    --basic-white: #fff;
+    --basic-brown: #766357;
+    --basic-descr: #333;
+    --bgc: #eee;
+    --hover-blue: #669ec0;
+    --active-blue: #5496bd;
+    --active-lightgrey: #bdbbbc;
+    --basic-grey: #f2f2f2;
+    --hover-brown: #604e43;
+    --active-brown: #503e33;
+}
+
+.page {
+    height: 100%;
+}
+
+.page__body {
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    background: var(--basic-white);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-items: start;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@import "blocks/header";
+@import "blocks/greeting";
+@import "blocks/reason";
+@import "blocks/city";
+@import "blocks/advantages";
+@import "blocks/bridge";
+@import "blocks/moreadvantages";
+@import "blocks/interested";
+@import "blocks/title";
+@import "blocks/number";
+@import "blocks/descr";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/modal";
+
+//Hotels
+
+@import "pageCatalog/choice";
+@import "pageCatalog/sort";
+@import "pageCatalog/page-catalog";
+@import "pageCatalog/hotels";

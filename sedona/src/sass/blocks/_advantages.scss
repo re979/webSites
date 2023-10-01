@@ -1,0 +1,18 @@
+.advantages {
+  padding: 61px 0 82px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 255px);
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  &__descr {
+    color: var(--basic-descr);
+  }
+  &__title {
+    margin: 28px 0 25px px 0;
+  }
+}

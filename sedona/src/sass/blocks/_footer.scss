@@ -1,0 +1,87 @@
+.footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        p {
+            margin: 0;
+        }
+    }
+    &__found {
+        width: 251px;
+        justify-self: center;
+        margin-left: 111px;
+        &-wrapper {
+            display: grid;
+        }
+        &-title {
+            justify-self: center;
+            line-height: 26px;
+            color: var(--basic-black);
+            text-decoration: none;
+            margin: 23px 0 9px 0;
+        }
+        &-phone {
+            line-height: 26px;
+            justify-self: center;
+            color: var(--basic-black);
+            text-decoration: none;
+            margin-bottom: 36px;
+        }
+    }
+    &__social {
+        width: 160px;
+        justify-self: center;
+        text-align: center;
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            background-color: var(--basic-blue);
+            &:hover {
+                background-color: var(--hover-blue);
+            }
+            &:active {
+                background-color: var(--active-blue);
+                path {
+                    fill: rgba(255, 255, 255, 0.711);
+                }
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 156px;
+            margin: 36px 0 36px 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+    }
+    &__developed {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        margin: 0;
+        justify-self: center;
+        &-img {
+            &:hover {
+                path {
+                    fill: var(--basic-blue);
+                }
+            }
+            &:active {
+                path {
+                    fill: var(--active-lightgrey);
+                }
+            }
+        }
+        b {
+            color: var(--basic-black);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.city {
+  color: var(--basic-white);
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 400px 800px;
+  }
+  &__description {
+    background-color: var(--basic-blue);
+    text-align: center;
+    padding: 47px 51px 54px 51px;
+  }
+  &__title {
+    margin: 0 auto 25px auto;
+    width: 122px;
+  }
+  &__number {
+    margin-top: 0;
+    margin-bottom: 19px;
+  }
+  &__descr {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 800px;
+    height: 256px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

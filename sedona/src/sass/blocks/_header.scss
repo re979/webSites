@@ -1,0 +1,40 @@
+.menu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 56px;
+    &__item {
+        font-size: 14px;
+        line-height: 26px;
+        a {
+            display: block;
+            color: var(--basic-black);
+            text-decoration: none;
+            padding: 15px 25px;
+            &:hover {
+                color: var(--basic-blue);
+            }
+            &:active {
+                color: var(--basic-brown);
+            }
+        }
+    }
+    &__logo {
+        display: block;
+        width: 138px;
+        height: 70px;
+        z-index: 1;
+        a {
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.greeting {
+    position: relative;
+    min-height: 509px;
+    background: url("../img/main_bg.png") center (center / cover) no-repeat;
+    &__title {
+        text-align: center;
+        img {
+            margin-top: 62px;
+        }
+    }
+    &__logo {
+        text-align: center;
+        img {
+            margin-top: 11px;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        img {
+            margin-top: 53px;
+        }
+    }
+    &__cutout {
+        position: absolute;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,197 @@
+.choice {
+    box-sizing: border-box;
+    height: 217px;
+    background: url("../img/backgroundHotel.png") center (center / cover) no-repeat;
+    padding: 26px 72px 32px 73px;
+    color: var(--basic-white);
+    font-weight: 400;
+    &__infrastructure {
+        border: none;
+        padding: 0;
+        width: 135px;
+        ul {
+            margin: 0;
+            list-style-type: none;
+            li {
+                margin-top: 24px;
+                line-height: 21px;
+                font-size: 14px;
+            }
+        }
+    }
+    &__housing {
+        position: relative;
+        border: none;
+        padding: 0;
+        margin-left: 120px;
+        width: 135px;
+        ul {
+            margin: 0;
+            list-style-type: none;
+            li {
+                margin-top: 24px;
+                line-height: 21px;
+                font-size: 14px;
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        &-option {
+            &:hover {
+                color: red;
+            }
+            label {
+                position: relative;
+                display: block;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+        &-inputcheck + label::before {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: -3px;
+            width: 19px;
+            height: 19px;
+            border: 2px solid var(--basic-white);
+        }
+        &-inputcheck:checked + label::after {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: -3px;
+            width: 25px;
+            height: 25px;
+            background-image: url("../icons/checkbox-on.svg");
+        }
+    }
+}
+
+.housing {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin-left: 120px;
+    width: 135px;
+    ul {
+        margin: 0;
+        list-style-type: none;
+        li {
+            margin-top: 24px;
+            line-height: 21px;
+            font-size: 14px;
+        }
+    }
+}
+
+.filter {
+    width: 318px;
+    border: none;
+    padding: 0;
+    margin-left: 336px;
+
+    legend {
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    &__range-price {
+        box-sizing: border-box;
+        position: relative;
+        height: 36px;
+        margin-bottom: 20px;
+        font-size: 0;
+        border: 2px solid var(--basic-white);
+        border-radius: 2px;
+        input {
+            width: 50px;
+            border: none;
+            color: inherit;
+            font: inherit;
+
+            background: none;
+            border: none;
+            outline: none;
+        }
+        .filter__min-price,
+        .filter__max-price {
+            margin-top: 5px;
+            width: 90px;
+            padding-left: 63px;
+        }
+        label {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+
+            cursor: pointer;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 22px;
+            background: var(--basic-white);
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__range-controls {
+        position: relative;
+        margin-bottom: 40px;
+        .scale {
+            height: 2px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .bar {
+            width: 80%;
+            height: 2px;
+            background: var(--basic-white);
+        }
+    }
+
+    &__toggle {
+        position: absolute;
+        top: -9px;
+        width: 4px;
+        height: 4px;
+        background-color: #ababab;
+        border: 8px solid var(--basic-white);
+        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background: #1c4f80;
+            transform: scale(1.2);
+        }
+        &-min {
+            left: 0;
+        }
+        &-max {
+            left: 80%;
+        }
+    }
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 7px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        color: #000000;
+        background: #ffffff;
+    }
+}

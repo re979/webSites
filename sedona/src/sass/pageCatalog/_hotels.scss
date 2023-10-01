@@ -1,0 +1,115 @@
+.hotels {
+    min-height: 454px;
+    &__btn {
+        width: 110px;
+        height: 27px;
+        background: #81b3d2;
+        border: none;
+        color: var(--basic-white);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        cursor: pointer;
+        &-brown {
+            width: 142px;
+            height: 27px;
+            background: #766357;
+        }
+    }
+    &-menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &__item {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 5fr 1fr;
+            padding: 30px 71px 30px 73px;
+            align-items: center;
+
+            &-top {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 1200px;
+                    height: 1px;
+                    background: #e5e5e5;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1200px;
+                height: 1px;
+                background: #e5e5e5;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &__img {
+            width: 135px;
+            height: 90px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__choice {
+            margin-left: 14px;
+        }
+        &__title {
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 26px;
+            margin-top: -9px;
+            margin-bottom: 11px;
+        }
+
+        &__descr {
+            display: flex;
+            width: 182px;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        &__estate {
+            color: #333;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+        &__price {
+            color: #333;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        &__stars {
+            justify-self: end;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 45px;
+                list-style-type: none;
+                justify-content: end;
+            }
+        }
+        &__rating {
+            display: inline;
+            padding: 3px 12px 3px 15px;
+            background: #f2f2f2;
+            color: #666;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            vertical-align: middle;
+        }
+    }
+}

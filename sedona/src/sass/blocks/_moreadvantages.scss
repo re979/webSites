@@ -1,0 +1,24 @@
+.moreadvantages {
+  background-color: var(--bgc);
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+  }
+  &__title {
+    width: 120px;
+    margin: 47px auto 25px auto;
+  }
+  &__number {
+    color: var(--basic-descr);
+    margin-bottom: 23px;
+  }
+  &__descr {
+    color: var(--basic-descr);
+    margin-bottom: 54px;
+  }
+}
