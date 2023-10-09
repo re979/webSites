@@ -1,12 +1,18 @@
+.header {
+    &__navigation {
+        position: relative;
+        width: 1200px;
+        min-height: 56px;
+    }
+}
+
 .menu {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    height: 56px;
     &__item {
         font-size: 14px;
         line-height: 26px;
@@ -22,12 +28,18 @@
                 color: var(--basic-brown);
             }
         }
+        &:nth-child(2) {
+            margin-right: 285px;
+        }
     }
     &__logo {
+        position: absolute;
         display: block;
         width: 138px;
         height: 70px;
         z-index: 1;
+        top: 0;
+        right: 530px;
         a {
             padding: 0;
         }

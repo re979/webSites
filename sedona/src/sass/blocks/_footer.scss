@@ -1,8 +1,12 @@
 .footer {
-    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
     &__wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 1200px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        background-color: rgba(255, 255, 255, 0.9);
         p {
             margin: 0;
         }
